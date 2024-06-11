@@ -22,7 +22,7 @@ function login(){
         success: function (dulieu) {
 
             localStorage.setItem("u", JSON.stringify(dulieu));
-            window.location.href = "../admin/students-per-teacher"
+            window.location.href = "../admin/admin.html"
         }
     })
 }

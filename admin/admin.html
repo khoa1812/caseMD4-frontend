@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Admin</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
+<h1 id="title">Admin</h1>
+<div id="div-btn">
+    <button onclick="displayFormCreate()" id="display-create">Thêm người dùng</button>
+</div>
+<div id="userList"></div>
 
+<form id="add-user" style="display:none;">
+    <h1>Thêm Mới User</h1>
+    <table>
+        <tr>
+            <td><label for="username">Tên User </label></td>
+            <td><input type="text" id="username" placeholder="username" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="text" id="email" placeholder="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Mật Khẩu:</label></td>
+            <td><input type="password" id="password" placeholder="password" required></td>
+        </tr>
+        <tr>
+            <td><label for="confirmPassword">Nhập lại mật khẩu:</label></td>
+            <td><input type="password" id="confirmPassword" placeholder="confirmPassword" required></td>
+        </tr>
+        <tr>
+            <td><label for="phoneNumber">Số điện thoại:</label></td>
+            <td><input type="number" id="phoneNumber" placeholder="phoneNumber" required></td>
+        </tr>
+        <tr>
+            <td><label for="fullName">Họ và Tên:</label></td>
+            <td><input type="text" id="fullName" placeholder="fullName" required></td>
+        </tr>
+        <tr>
+            <td><label for="dateOfBirth">Ngày sinh:</label></td>
+            <td><input type="date" id="dateOfBirth" placeholder="dateOfBirth" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Địa chỉ:</label></td>
+            <td><input type="text" id="address" placeholder="address" required></td>
+        </tr>
+        <tr>
+            <td><label for="identity">Danh tính:</label></td>
+            <td><input type="text" id="identity" placeholder="identity" required></td>
+        </tr>
+        <tr>
+            <td><label for="enabled">Trạng thái:</label></td>
+            <td><input type="text" id="enabled" placeholder="enabled" required></td>
+        </tr>
+        <tr>
+            <td><label for="id">ID:</label></td>
+            <td><input type="text" id="id" placeholder="id" required></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Thêm"></td>
+        </tr>
+    </table>
+</form>
+
+<script type="text/javascript" src="admin.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ function addNewUser(event) {
         },
         type: "POST",
         data: JSON.stringify(newUser),
-        url: "http://localhost:8080/admin/register",
+        url: "http://localhost:8081/admin/register",
         success: function() {
             successHandler();
             displayFormCreate();
@@ -83,7 +83,7 @@ function successHandler() {
             "Authorization": "Bearer " + token
         },
         method: "GET",
-        url: "http://localhost:8080/",
+        url: "http://localhost:8081/",
         success: function (data) {
             let content = '<table id="display-list" border="1"><tr>' +
                 '<th>Tên User</th>' +

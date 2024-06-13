@@ -18,7 +18,7 @@ function login(){
         method: "POST",
 
         data: JSON.stringify(u),
-        url: "http://localhost:8080/login",
+        url: "http://localhost:8081/login",
         success: function (dulieu) {
 
             localStorage.setItem("u", JSON.stringify(dulieu));
